@@ -1,1 +1,3 @@
 # reset-host
+
+Esse script em lote é utilizado para reiniciar várias máquinas remotamente. Ele começa lendo um arquivo de texto chamado "maquinas.txt", que contém uma lista de nomes de máquinas que serão reiniciadas. Em seguida, para cada linha do arquivo, o script emite uma mensagem informando qual máquina está sendo reiniciada e usa o comando "shutdown" para reiniciar a máquina remota especificada. O comando "-s" significa que a máquina será desligada, "-t 0" define o tempo de espera antes de reiniciar para 0 segundos, "-f" força o fechamento de aplicativos em execução sem solicitar confirmação do usuário e "-m \\%%a" especifica o nome da máquina que será reiniciada, onde "%%a" é o nome da máquina atual no loop. 
